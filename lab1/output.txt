@@ -1,0 +1,11 @@
+v1    3.000    4.000    5.000
+v2    4.000   -1.000    2.000
+v2 - v1 =     1.000   -5.000   -3.000
+v1 dot v2 is   18.000 
+Length of v1 is    7.071 
+v1 scaled by its 1/ length:      0.424    0.566    0.707
+unit vector in v1 direction:     0.424    0.566    0.707
+v1 + v2 =     7.000    3.000    7.000
+
+===Aliased parameter test===
+v1 is now its own unit vector:    0.424    0.566    0.707

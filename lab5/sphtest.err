@@ -1,0 +1,3 @@
+sphtest.c: In function ‘main’:
+sphtest.c:16:15: warning: variable ‘count’ set but not used [-Wunused-but-set-variable]
+sphtest.c:10:14: warning: unused variable ‘cam’ [-Wunused-variable]

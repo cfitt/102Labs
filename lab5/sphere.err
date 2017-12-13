@@ -1,0 +1,2 @@
+sphere.c: In function ‘sphere_hits’:
+sphere.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]

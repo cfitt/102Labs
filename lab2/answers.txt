@@ -1,0 +1,54 @@
+Factorial.c program
+
+1.  When you ran the program before using gdb (step 5 in the lab 
+	 instructions), what output did you get with input of 3 and 
+	 with input of 5 ??  
+	
+	Both answers were 0, which is not good.
+
+
+2.  What output should you have gotten with each of those inputs?
+	The factorial program should produce 
+
+	3!=6
+	5!=120.
+
+
+3.  Why is the output incorrect?  Fix the program so that it works and
+	 explain how you fixed it.
+	
+	The while loop within factorial.c used 0 when it performed it's last loop, which should not have been included to create the factorial. I fixed thisn problem by changing "while (n--)" to "while (--n)". After this, the factorial for the integer one less than the one submitted by the user was produced. So, I added a simple fix with "n+=1;" before the while loop.
+	 
+	
+	 
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+segFault.c program
+
+4.  Why would buf still be NULL after the malloc function call?  Use the
+	 man pages with malloc to see if you can get any ideas.
+	
+	Because the size is 0 proir to the malloc function, it returns a NULL.
+
+
+5.  How can you fix the program so that it doesn't segfault?
+
+	I fixed this by changing the "buf = malloc(1<<31);" to "buf = malloc(1<<30);".
+	
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+memoryLeak.c program
+
+6.  How many bytes of memory were lost with this program?
+	100 bytes were definitely lost.
+
+
+7.  Where in the program was the lost memory allocated?
+	the lost memory was allocated on line 11 at 0x400505
+
+
+
+
+
+
